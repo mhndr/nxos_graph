@@ -1732,7 +1732,7 @@
     "process_name": "/isan/sbin/syslogd",
     "scope": "boot",
     "is_eth_infra": "",
-    "run_mode": "asap yes",
+    "run_mode": "asap",
     "run_condition": "",
     "service_dependency": [
       "dme_proxy"

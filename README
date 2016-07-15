@@ -12,7 +12,8 @@ TODO:
 -----
 include the following attributes and assign colors to nodes. 
 1. scope     = boot, infra, control
-2. run modes = asap, conditional, conditional+optional
-3. core plugin or eth_plugin
-4. base VDC  = if yes, it should be part of core or eth_flag = true.
-5. service dependency resolved 
+2. run modes = asap, conditional, conditional/on-demand
+3. run condition = optional, compulsory/" "
+4. core plugin or eth_plugin
+5. base VDC  = if yes, it should be part of core or eth_flag = true.
+6. service dependency resolved 
