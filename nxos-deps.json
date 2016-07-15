@@ -1,0 +1,2061 @@
+[
+  {
+    "service_name": "aaa",
+    "conf_file": "aaa.conf",
+    "process_name": "/isan/bin/aaad",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "acllog",
+    "conf_file": "acllog.conf",
+    "process_name": "/isan/bin/acllog",
+    "scope": "control",
+    "is_eth_infra": "yes",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "netstack"
+    ]
+  },
+  {
+    "service_name": "aclmgr",
+    "conf_file": "aclmgr.conf",
+    "process_name": "/isan/bin/aclmgr",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "vmm"
+    ]
+  },
+  {
+    "service_name": "aclqos",
+    "conf_file": "aclqos.conf",
+    "process_name": "/isan/bin/aclqos",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "ipqosmgr",
+      "vmm"
+    ]
+  },
+  {
+    "service_name": "adbm",
+    "conf_file": "adbm.conf",
+    "process_name": "/isan/bin/adbm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "adjmgr",
+    "conf_file": "am.conf",
+    "process_name": "/isan/bin/routing-sw/am",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "l3vm"
+    ]
+  },
+  {
+    "service_name": "arp",
+    "conf_file": "arp.conf",
+    "process_name": "/isan/bin/routing-sw/arp",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "adjmgr"
+    ]
+  },
+  {
+    "service_name": "ascii-cfg",
+    "conf_file": "ascii_cfg_server.conf",
+    "process_name": "/isan/bin/ascii_cfg_server",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": []
+  },
+  {
+    "service_name": "bios_daemon",
+    "conf_file": "bios_daemon.conf",
+    "process_name": "/isan/bin/bios_daemon",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "bloggerd",
+    "conf_file": "bloggerd.conf",
+    "process_name": "/isan/bin/bloggerd",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "bootvar",
+    "conf_file": "bootvar.conf",
+    "process_name": "/isan/bin/bootvar",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "module"
+    ]
+  },
+  {
+    "service_name": "callhome",
+    "conf_file": "callhome.conf",
+    "process_name": "/isan/bin/callhome",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "snmpd"
+    ]
+  },
+  {
+    "service_name": "cdp",
+    "conf_file": "cdpd.conf",
+    "process_name": "/isan/bin/cdpd",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": [
+      "netstack"
+    ]
+  },
+  {
+    "service_name": "cert_enroll",
+    "conf_file": "cert_enroll.conf",
+    "process_name": "/isan/bin/cert_enrolld",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "cfs",
+    "conf_file": "cfs.conf",
+    "process_name": "/isan/bin/cfs",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "netstack",
+      "l3vm"
+    ]
+  },
+  {
+    "service_name": "clis",
+    "conf_file": "clis.conf",
+    "process_name": "/isan/bin/routing-sw/clis",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": [
+      "smm"
+    ]
+  },
+  {
+    "service_name": "clk_mgr",
+    "conf_file": "clk_mgr.conf",
+    "process_name": "/isan/bin/clk_mgr",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "confcheck",
+    "conf_file": "confcheck.conf",
+    "process_name": "/isan/bin/confcheck",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": []
+  },
+  {
+    "service_name": "copp",
+    "conf_file": "copp.conf",
+    "process_name": "/isan/bin/copp",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "aclmgr"
+    ]
+  },
+  {
+    "service_name": "core-dmon",
+    "conf_file": "core_daemon.conf",
+    "process_name": "/isan/bin/core_daemon",
+    "scope": "",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "crdcfg_server",
+    "conf_file": "crdcfg_server.conf",
+    "process_name": "/isan/bin/crdcfg_server",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "cardclient",
+    "conf_file": "crdclient.conf",
+    "process_name": "/isan/bin/crdclient",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "module",
+      "crdcfg_server"
+    ]
+  },
+  {
+    "service_name": "sensor",
+    "conf_file": "dc3_sensor_sup.conf",
+    "process_name": "/isan/bin/dc3_sensor",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "lcdc3_syncpoint1"
+    ]
+  },
+  {
+    "service_name": "dcos-xinetd",
+    "conf_file": "dcos-xinetd-sysmgr.conf",
+    "process_name": "/isan/bin/routing-sw/dcos-xinetd",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "tcpudp"
+    ]
+  },
+  {
+    "service_name": "device_test",
+    "conf_file": "device_test.conf",
+    "process_name": "/isan/bin/device_test",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "crdcfg_server",
+      "diagclient"
+    ]
+  },
+  {
+    "service_name": "dhclient",
+    "conf_file": "dhclient.conf",
+    "process_name": "/isan/bin/dhclient",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "dhcp_snoop",
+    "conf_file": "dhcp_snoop.conf",
+    "process_name": "/isan/bin/dhcp_snoop",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "sal",
+      "vmm",
+      "vlan_mgr",
+      "ifmgr"
+    ]
+  },
+  {
+    "service_name": "diagclient",
+    "conf_file": "diagclient.conf",
+    "process_name": "/isan/bin/diagclient",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "diagmgr",
+    "conf_file": "diagmgr.conf",
+    "process_name": "/isan/bin/diagmgr",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "diagclient",
+      "module"
+    ]
+  },
+  {
+    "service_name": "diag_port_lb",
+    "conf_file": "diag_port_lb.conf",
+    "process_name": "/isan/bin/diag_port_lb",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "eltm",
+      "vlan_mgr",
+      "diagclient"
+    ]
+  },
+  {
+    "service_name": "dme_copyrs_backend",
+    "conf_file": "dme_copyrs_backend.conf",
+    "process_name": "/isan/bin/dme_copyrs_backend",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "dme_example_backend",
+    "conf_file": "dme_example_backend.conf",
+    "process_name": "/isan/bin/dme_example_backend",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "dme_ha_backend",
+    "conf_file": "dme_ha_backend.conf",
+    "process_name": "/isan/bin/dme_ha_backend",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "dme_proxy",
+    "conf_file": "dme_proxy.conf",
+    "process_name": "/isan/bin/dme_proxy",
+    "scope": "boot",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "dme_restart_backend",
+    "conf_file": "dme_restart_backend.conf",
+    "process_name": "/isan/bin/dme_restart_backend",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "dme_test_backend",
+    "conf_file": "dme_test_backend.conf",
+    "process_name": "/isan/bin/dme_test_backend",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "eltm",
+    "conf_file": "eltm.conf",
+    "process_name": "/isan/bin/eltm",
+    "scope": "control",
+    "is_eth_infra": "yes",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "pltfm_config",
+      "l3vm",
+      "res_mgr"
+    ]
+  },
+  {
+    "service_name": "epld_upgrade",
+    "conf_file": "epld_upgrade.conf",
+    "process_name": "/isan/bin/epld_upgrade",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "on_demand",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "epld_upgrade_stdby",
+    "conf_file": "epld_upgrade_stdby.conf",
+    "process_name": "/isan/bin/epld_upgrade_stdby",
+    "scope": "",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "eth_dstats",
+    "conf_file": "eth_dstats.conf",
+    "process_name": "/isan/bin/eth_dstats",
+    "scope": "control",
+    "is_eth_infra": "yes",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "eth_port_channel"
+    ]
+  },
+  {
+    "service_name": "ethpm",
+    "conf_file": "ethpm.conf",
+    "process_name": "/isan/bin/ethpm",
+    "scope": "control",
+    "is_eth_infra": "yes",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "ifmgr",
+      "eth_port_channel",
+      "vlan_mgr"
+    ]
+  },
+  {
+    "service_name": "eth_port_channel",
+    "conf_file": "eth_port_channel_mgr.conf",
+    "process_name": "/isan/bin/eth_pcm",
+    "scope": "control",
+    "is_eth_infra": "yes",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "ifmgr"
+    ]
+  },
+  {
+    "service_name": "evb",
+    "conf_file": "evb.conf",
+    "process_name": "/isan/bin/evb",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "evmc",
+    "conf_file": "evmc.conf",
+    "process_name": "/isan/bin/evmc",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": [
+      "evms"
+    ]
+  },
+  {
+    "service_name": "evmed",
+    "conf_file": "evmed.conf",
+    "process_name": "/isan/bin/evmed",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "evms",
+    "conf_file": "evms.conf",
+    "process_name": "/isan/bin/evms",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": []
+  },
+  {
+    "service_name": "ExceptionLog",
+    "conf_file": "exp_logger.conf",
+    "process_name": "/isan/bin/expl",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "module"
+    ]
+  },
+  {
+    "service_name": "feature-mgr",
+    "conf_file": "feature_mgr.conf",
+    "process_name": "/isan/bin/feature_mgr",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "lmgrd",
+    "conf_file": "flexlm.conf",
+    "process_name": "/isan/bin/flexlm_wrapper",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "fs-daemon",
+    "conf_file": "fs_daemon.conf",
+    "process_name": "/isan/bin/fs_daemon",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "glbp",
+    "conf_file": "glbp.conf",
+    "process_name": "/isan/bin/glbp",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "eltm",
+      "rpm",
+      "urib",
+      "netstack",
+      "res_mgr",
+      "l3vm",
+      "arp",
+      "eth_port_channel",
+      "ifmgr"
+    ]
+  },
+  {
+    "service_name": "hmm",
+    "conf_file": "hmm.conf",
+    "process_name": "/isan/bin/routing-sw/hmm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "hsrp_engine",
+    "conf_file": "hsrp_engine.conf",
+    "process_name": "/isan/bin/hsrp_engine",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "res_mgr",
+      "icmpv6",
+      "u6rib",
+      "eltm",
+      "l3vm",
+      "rpm",
+      "urib",
+      "arp",
+      "netstack",
+      "eth_port_channel",
+      "ifmgr"
+    ]
+  },
+  {
+    "service_name": "icmpv6",
+    "conf_file": "icmpv6.conf",
+    "process_name": "/isan/bin/routing-sw/icmpv6",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "adjmgr"
+    ]
+  },
+  {
+    "service_name": "ifmgr",
+    "conf_file": "ifmgr.conf",
+    "process_name": "/isan/bin/ifmgr",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "module"
+    ]
+  },
+  {
+    "service_name": "igmp",
+    "conf_file": "igmp.conf",
+    "process_name": "/isan/bin/routing-sw/igmp",
+    "scope": "control",
+    "is_eth_infra": "yes",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": [
+      "netstack"
+    ]
+  },
+  {
+    "service_name": "imp",
+    "conf_file": "imp.conf",
+    "process_name": "/isan/bin/imp",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "ip_dummy",
+    "conf_file": "ip_dummy.conf",
+    "process_name": "/isan/bin/routing-sw/netstack_dummy",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "netstack"
+    ]
+  },
+  {
+    "service_name": "ipfib",
+    "conf_file": "ipfib.conf",
+    "process_name": "/isan/bin/ipfib",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "ipqosmgr",
+    "conf_file": "ipqosmgr.conf",
+    "process_name": "/isan/bin/ipqosmgr",
+    "scope": "control",
+    "is_eth_infra": "yes",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "eth_port_channel",
+      "vmm"
+    ]
+  },
+  {
+    "service_name": "ipv6_dummy",
+    "conf_file": "ipv6_dummy.conf",
+    "process_name": "/isan/bin/routing-sw/netstack_dummy",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "netstack"
+    ]
+  },
+  {
+    "service_name": "iscm",
+    "conf_file": "iscm.conf",
+    "process_name": "/isan/bin/iscm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": [
+      "urib",
+      "rpm",
+      "netstack",
+      "res_mgr"
+    ]
+  },
+  {
+    "service_name": "kim",
+    "conf_file": "kim.conf",
+    "process_name": "/isan/bin/kim",
+    "scope": "control",
+    "is_eth_infra": "yes",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "l2fm",
+    "conf_file": "l2fm.conf",
+    "process_name": "/isan/bin/l2fm",
+    "scope": "control",
+    "is_eth_infra": "yes",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "vdc_mgr",
+      "vlan_mgr",
+      "cfs",
+      "pktmgr"
+    ]
+  },
+  {
+    "service_name": "l2fwd",
+    "conf_file": "l2fwder.conf",
+    "process_name": "/isan/bin/routing-sw/l2fwder",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "kim",
+      "ifmgr"
+    ]
+  },
+  {
+    "service_name": "l2pt",
+    "conf_file": "l2pt.conf",
+    "process_name": "/isan/bin/l2pt",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "netstack",
+      "ifmgr"
+    ]
+  },
+  {
+    "service_name": "l2rib",
+    "conf_file": "l2rib.conf",
+    "process_name": "/isan/bin/l2rib",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "l3vm",
+    "conf_file": "l3vm.conf",
+    "process_name": "/isan/bin/routing-sw/l3vm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "kim",
+      "res_mgr"
+    ]
+  },
+  {
+    "service_name": "module",
+    "conf_file": "lcm_sysmgr.conf",
+    "process_name": "/isan/bin/lcm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "ldap",
+    "conf_file": "ldap.conf",
+    "process_name": "/isan/bin/ldapd",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "netstack",
+      "l3vm"
+    ]
+  },
+  {
+    "service_name": "ldp",
+    "conf_file": "ldp.conf",
+    "process_name": "/isan/bin/routing-sw/ldp",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "licmgr",
+    "conf_file": "licmgr.conf",
+    "process_name": "/isan/bin/licmgr",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": [
+      "smm"
+    ]
+  },
+  {
+    "service_name": "lim",
+    "conf_file": "lim.conf",
+    "process_name": "/isan/bin/lim",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "m2rib",
+    "conf_file": "m2rib.conf",
+    "process_name": "/isan/bin/m2rib",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "mfdm"
+    ]
+  },
+  {
+    "service_name": "m6rib",
+    "conf_file": "m6rib.conf",
+    "process_name": "/isan/bin/routing-sw/m6rib",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "mcastfwd",
+    "conf_file": "mcastfwd.conf",
+    "process_name": "/isan/bin/routing-sw/mcastfwd",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": [
+      "mrib",
+      "netstack",
+      "rpm"
+    ]
+  },
+  {
+    "service_name": "vpc",
+    "conf_file": "mcecm.conf",
+    "process_name": "/isan/bin/mcecm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "res_mgr",
+      "netstack",
+      "ethpm"
+    ]
+  },
+  {
+    "service_name": "mcm",
+    "conf_file": "mcm.conf",
+    "process_name": "/isan/bin/mcm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "mfdm",
+    "conf_file": "mfdm.conf",
+    "process_name": "/isan/bin/mfdm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "capability",
+    "conf_file": "migd.conf",
+    "process_name": "/isan/bin/capability",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "mmode",
+    "conf_file": "mmode.conf",
+    "process_name": "/isan/bin/mmode",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "monitor",
+    "conf_file": "monitor.conf",
+    "process_name": "/isan/bin/eth_span",
+    "scope": "control",
+    "is_eth_infra": "yes",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "res_mgr"
+    ]
+  },
+  {
+    "service_name": "mping_server",
+    "conf_file": "mping_server.conf",
+    "process_name": "/isan/bin/mping_server",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "mpls",
+    "conf_file": "mpls.conf",
+    "process_name": "/isan/bin/routing-sw/mpls",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "mpls_static",
+    "conf_file": "mpls_static.conf",
+    "process_name": "/isan/bin/routing-sw/mpls_static",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "mrib",
+    "conf_file": "mrib.conf",
+    "process_name": "/isan/bin/routing-sw/mrib",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "netstack",
+      "res_mgr"
+    ]
+  },
+  {
+    "service_name": "msdp",
+    "conf_file": "msdp.conf",
+    "process_name": "/isan/bin/routing-sw/msdp",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "mrib",
+      "netstack",
+      "rpm"
+    ]
+  },
+  {
+    "service_name": "mvsh",
+    "conf_file": "mvsh.conf",
+    "process_name": "/isan/bin/mvsh",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": []
+  },
+  {
+    "service_name": "nat",
+    "conf_file": "nat.conf",
+    "process_name": "/isan/bin/nat",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "l3vm",
+      "urib",
+      "ifmgr",
+      "arp",
+      "adjmgr"
+    ]
+  },
+  {
+    "service_name": "nbproxy",
+    "conf_file": "nbproxy.conf",
+    "process_name": "/isan/bin/nbproxy",
+    "scope": "",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": []
+  },
+  {
+    "service_name": "netstack",
+    "conf_file": "netstack.conf",
+    "process_name": "/isan/bin/routing-sw/netstack",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "kim",
+      "aclmgr",
+      "crdcfg_server",
+      "pktmgr",
+      "ifmgr",
+      "u6rib",
+      "urib",
+      "adjmgr"
+    ]
+  },
+  {
+    "service_name": "installer",
+    "conf_file": "new_installer.conf",
+    "process_name": "/isan/bin/new_installer",
+    "scope": "",
+    "is_eth_infra": "",
+    "run_mode": "on_demand",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "nfm",
+    "conf_file": "nfm.conf",
+    "process_name": "/isan/bin/nfm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "vlan_mgr",
+      "vmm"
+    ]
+  },
+  {
+    "service_name": "ngoam",
+    "conf_file": "ngoam.conf",
+    "process_name": "/isan/bin/ngoam",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "npacl",
+    "conf_file": "npacl.conf",
+    "process_name": "/isan/bin/routing-sw/npacl",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "aclmgr"
+    ]
+  },
+  {
+    "service_name": "nve",
+    "conf_file": "nve.conf",
+    "process_name": "/isan/bin/nve",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "lim",
+      "ip",
+      "ufdm"
+    ]
+  },
+  {
+    "service_name": "obfl",
+    "conf_file": "obfl_sysmgr.conf",
+    "process_name": "/isan/bin/obfl_sup",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "bios_daemon"
+    ]
+  },
+  {
+    "service_name": "of_agent",
+    "conf_file": "of_agent.conf",
+    "process_name": "/isan/bin/of_agent",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "oim",
+    "conf_file": "oim.conf",
+    "process_name": "/isan/bin/oim",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "onep",
+    "conf_file": "onep.conf",
+    "process_name": "/isan/bin/onep",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "icmpv6",
+      "u6rib",
+      "urib"
+    ]
+  },
+  {
+    "service_name": "orib",
+    "conf_file": "orib.conf",
+    "process_name": "/isan/bin/orib",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "otm",
+    "conf_file": "otm.conf",
+    "process_name": "/isan/bin/otm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": [
+      "netstack",
+      "u6rib",
+      "urib",
+      "l3vm",
+      "evmc",
+      "ifmgr"
+    ]
+  },
+  {
+    "service_name": "patch-installer",
+    "conf_file": "patch_installer.conf",
+    "process_name": "/isan/bin/patch_installer",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "pfm_dummy",
+    "conf_file": "pfm_dummy.conf",
+    "process_name": "/isan/bin/pfm_dummy",
+    "scope": "boot",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "pfstat",
+    "conf_file": "pfstat.conf",
+    "process_name": "/isan/bin/pfstat",
+    "scope": "control",
+    "is_eth_infra": "yes",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "pim6",
+    "conf_file": "pim6.conf",
+    "process_name": "/isan/bin/routing-sw/pim6",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "m6rib",
+      "netstack",
+      "rpm"
+    ]
+  },
+  {
+    "service_name": "pim",
+    "conf_file": "pim.conf",
+    "process_name": "/isan/bin/routing-sw/pim",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "mrib",
+      "netstack",
+      "pktmgr",
+      "rpm"
+    ]
+  },
+  {
+    "service_name": "pixm_gl",
+    "conf_file": "pixm_gl.conf",
+    "process_name": "/isan/bin/pixm_gl",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "pixm_vl",
+    "conf_file": "pixm_vl.conf",
+    "process_name": "/isan/bin/pixm_vl",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "plcmgr",
+    "conf_file": "plcmgr.conf",
+    "process_name": "/isan/bin/plcmgr",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "vmm"
+    ]
+  },
+  {
+    "service_name": "plog_sup",
+    "conf_file": "plog_sysmgr.conf",
+    "process_name": "/isan/bin/plog_sup",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "pltfm_config",
+    "conf_file": "pltfm_config.conf",
+    "process_name": "/isan/bin/pltfm_config",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "module"
+    ]
+  },
+  {
+    "service_name": "platform",
+    "conf_file": "pltfm_mgr.conf",
+    "process_name": "/isan/bin/pfm",
+    "scope": "boot",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "tftpd",
+      "sdwrapd"
+    ]
+  },
+  {
+    "service_name": "plugin",
+    "conf_file": "plugin.conf",
+    "process_name": "/isan/bin/plugin",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "pktmgr",
+    "conf_file": "pm.conf",
+    "process_name": "/isan/bin/routing-sw/pm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "kim",
+      "ifmgr",
+      "u6rib",
+      "urib",
+      "adjmgr"
+    ]
+  },
+  {
+    "service_name": "poap",
+    "conf_file": "poap.conf",
+    "process_name": "/isan/bin/poap",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "ifmgr"
+    ]
+  },
+  {
+    "service_name": "port-profile",
+    "conf_file": "ppm.conf",
+    "process_name": "/isan/bin/ppm",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": [
+      "clis"
+    ]
+  },
+  {
+    "service_name": "psshelper",
+    "conf_file": "psshelper.conf",
+    "process_name": "/isan/bin/psshelper",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "psshelper_gsvc",
+    "conf_file": "psshelper_gsvc.conf",
+    "process_name": "/isan/bin/psshelper",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "ptp",
+    "conf_file": "ptp.conf",
+    "process_name": "/isan/bin/ptp",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "ip",
+      "netstack",
+      "l3vm",
+      "pktmgr"
+    ]
+  },
+  {
+    "service_name": "private-vlan",
+    "conf_file": "pvlan.conf",
+    "process_name": "/isan/bin/pvlan",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "l2fm",
+      "eltm",
+      "ethpm"
+    ]
+  },
+  {
+    "service_name": "pyproxy",
+    "conf_file": "pyproxy.conf",
+    "process_name": "/isan/bin/pyproxy",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "radius",
+    "conf_file": "radius.conf",
+    "process_name": "/isan/bin/radiusd",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "sksd",
+      "netstack",
+      "l3vm"
+    ]
+  },
+  {
+    "service_name": "res_mgr",
+    "conf_file": "res_mgr.conf",
+    "process_name": "/isan/bin/res_mgr",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "rpm",
+    "conf_file": "rpm.conf",
+    "process_name": "/isan/bin/routing-sw/rpm",
+    "scope": "control",
+    "is_eth_infra": "yes",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "netstack",
+      "arp"
+    ]
+  },
+  {
+    "service_name": "sal",
+    "conf_file": "sal.conf",
+    "process_name": "/isan/bin/sal",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": [
+      "u6rib",
+      "urib",
+      "l3vm"
+    ]
+  },
+  {
+    "service_name": "fex",
+    "conf_file": "satmgr.conf",
+    "process_name": "/isan/bin/satmgr",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "vlan_mgr",
+      "pktmgr"
+    ]
+  },
+  {
+    "service_name": "scheduler",
+    "conf_file": "schedulerd.conf",
+    "process_name": "/isan/bin/schedulerd",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "sdwrapd",
+    "conf_file": "sdwrapd.conf",
+    "process_name": "/isan/bin/sdwrapd",
+    "scope": "boot",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "securityd",
+    "conf_file": "security.conf",
+    "process_name": "/isan/bin/securityd",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "sflow",
+    "conf_file": "sflow.conf",
+    "process_name": "/isan/bin/sflow",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "pltfm_config",
+      "eth_port_channel",
+      "vlan_mgr"
+    ]
+  },
+  {
+    "service_name": "sksd",
+    "conf_file": "sksd.conf",
+    "process_name": "/isan/bin/sksd",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "sla_responder",
+    "conf_file": "sla_r.conf",
+    "process_name": "/isan/bin/sla_r",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "sla_sender",
+    "conf_file": "sla_s.conf",
+    "process_name": "/isan/bin/sla_s",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": []
+  },
+  {
+    "service_name": "smm",
+    "conf_file": "smm.conf",
+    "process_name": "/isan/bin/routing-sw/smm",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "snmpd",
+    "conf_file": "snmp_ha.conf",
+    "process_name": "/isan/bin/snmpd",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": [
+      "netstack",
+      "l3vm"
+    ]
+  },
+  {
+    "service_name": "snmpmib_proc",
+    "conf_file": "snmpmib_proc.conf",
+    "process_name": "/isan/bin/snmpmib_proc",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": []
+  },
+  {
+    "service_name": "spm",
+    "conf_file": "spm.conf",
+    "process_name": "/isan/bin/spm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "aclmgr",
+      "vmm"
+    ]
+  },
+  {
+    "service_name": "statsclient",
+    "conf_file": "stats_client.conf",
+    "process_name": "/isan/bin/stats_client",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "lcdc3_syncpoint1"
+    ]
+  },
+  {
+    "service_name": "stp",
+    "conf_file": "stp.conf",
+    "process_name": "/isan/bin/stp",
+    "scope": "control",
+    "is_eth_infra": "yes",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "pktmgr",
+      "ethpm"
+    ]
+  },
+  {
+    "service_name": "stripcl",
+    "conf_file": "stripcl.conf",
+    "process_name": "/isan/bin/routing-sw/stripcl",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "ethpm",
+      "ifmgr",
+      "netstack"
+    ]
+  },
+  {
+    "service_name": "lcdc3_syncpoint1",
+    "conf_file": "synctask1_sup.conf",
+    "process_name": "/isan/bin/sync_point",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "cardclient"
+    ]
+  },
+  {
+    "service_name": "lcdc3_syncpoint2",
+    "conf_file": "synctask2_sup.conf",
+    "process_name": "/isan/bin/sync_point",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "lcdc3_syncpoint1",
+      "sensor"
+    ]
+  },
+  {
+    "service_name": "lcdc3_syncpoint3",
+    "conf_file": "synctask3_sup.conf",
+    "process_name": "/isan/bin/sync_point",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "lcdc3_syncpoint2",
+      "sensor"
+    ]
+  },
+  {
+    "service_name": "lcdc3_syncpoint4",
+    "conf_file": "synctask4_sup.conf",
+    "process_name": "/isan/bin/sync_point",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "lcdc3_syncpoint3"
+    ]
+  },
+  {
+    "service_name": "lcdc3_syncpoint5",
+    "conf_file": "synctask5_sup.conf",
+    "process_name": "/isan/bin/sync_point",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "lcdc3_syncpoint3"
+    ]
+  },
+  {
+    "service_name": "sysinfo",
+    "conf_file": "sysinfo.conf",
+    "process_name": "/isan/bin/sysinfo",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "syslogd",
+    "conf_file": "syslogd.conf",
+    "process_name": "/isan/sbin/syslogd",
+    "scope": "boot",
+    "is_eth_infra": "",
+    "run_mode": "asap yes",
+    "run_condition": "",
+    "service_dependency": [
+      "dme_proxy"
+    ]
+  },
+  {
+    "service_name": "nxapi",
+    "conf_file": "sysmgr_nxapi.conf",
+    "process_name": "/usr/sbin/nginx",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "compulsory",
+    "service_dependency": []
+  },
+  {
+    "service_name": "tcpudp_dummy",
+    "conf_file": "tcpudp_dummy.conf",
+    "process_name": "/isan/bin/routing-sw/netstack_dummy",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "netstack"
+    ]
+  },
+  {
+    "service_name": "tftpd",
+    "conf_file": "tftpd.conf",
+    "process_name": "/usr/sbin/in.tftpd",
+    "scope": "boot",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "tunnel",
+    "conf_file": "tm.conf",
+    "process_name": "/isan/bin/tm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "monitor",
+      "eltm",
+      "urib",
+      "l3vm",
+      "ifmgr"
+    ]
+  },
+  {
+    "service_name": "ttyd",
+    "conf_file": "ttyd.conf",
+    "process_name": "/isan/bin/ttyd",
+    "scope": "",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "u2",
+    "conf_file": "u2.conf",
+    "process_name": "/isan/bin/u2",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "u2rib",
+    "conf_file": "u2rib.conf",
+    "process_name": "/isan/bin/u2rib",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "u6rib",
+    "conf_file": "u6rib.conf",
+    "process_name": "/isan/bin/routing-sw/u6rib",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "l3vm",
+      "res_mgr"
+    ]
+  },
+  {
+    "service_name": "udld",
+    "conf_file": "udld.conf",
+    "process_name": "/isan/bin/udld",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "ethpm",
+      "pktmgr",
+      "cdp"
+    ]
+  },
+  {
+    "service_name": "ufdm",
+    "conf_file": "ufdm.conf",
+    "process_name": "/isan/bin/ufdm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "spm",
+      "eltm"
+    ]
+  },
+  {
+    "service_name": "ulib",
+    "conf_file": "ulib.conf",
+    "process_name": "/isan/bin/routing-sw/ulib",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "res_mgr"
+    ]
+  },
+  {
+    "service_name": "urib",
+    "conf_file": "urib.conf",
+    "process_name": "/isan/bin/routing-sw/urib",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "res_mgr"
+    ]
+  },
+  {
+    "service_name": "usbhsd",
+    "conf_file": "usbhsd.conf",
+    "process_name": "/isan/bin/usbhsd",
+    "scope": "",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "vbuilder",
+    "conf_file": "vbuilder.conf",
+    "process_name": "/isan/bin/vbuilder",
+    "scope": "",
+    "is_eth_infra": "",
+    "run_mode": "on_demand",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "vdc_mgr",
+    "conf_file": "vdc_mgr.conf",
+    "process_name": "/isan/bin/vdc_mgr",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "vlan_mgr",
+    "conf_file": "vlan_mgr.conf",
+    "process_name": "/isan/bin/vlan_mgr",
+    "scope": "control",
+    "is_eth_infra": "yes",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "eltm",
+      "monitor",
+      "res_mgr"
+    ]
+  },
+  {
+    "service_name": "vman",
+    "conf_file": "vman.conf",
+    "process_name": "/isan/bin/vman",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "vmm",
+    "conf_file": "vmm.conf",
+    "process_name": "/isan/bin/vmm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "vntag_mgr",
+    "conf_file": "vntag_mgr.conf",
+    "process_name": "/isan/bin/vntag_mgr",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "",
+    "service_dependency": [
+      "vlan_mgr"
+    ]
+  },
+  {
+    "service_name": "vrrp-eng",
+    "conf_file": "vrrp_engine.conf",
+    "process_name": "/isan/bin/vrrp_engine",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "l2fm",
+      "eltm",
+      "netstack",
+      "res_mgr",
+      "l3vm",
+      "arp",
+      "urib",
+      "ifmgr",
+      "vrrp-cfg"
+    ]
+  },
+  {
+    "service_name": "vrrp-cfg",
+    "conf_file": "vrrp_mgr.conf",
+    "process_name": "/isan/bin/vrrp_mgr",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "l2fm",
+      "eltm",
+      "netstack",
+      "res_mgr",
+      "l3vm",
+      "arp",
+      "ip",
+      "urib",
+      "ifmgr"
+    ]
+  },
+  {
+    "service_name": "vrrpv3",
+    "conf_file": "vrrpv3.conf",
+    "process_name": "/isan/bin/vrrpv3",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "optional",
+    "service_dependency": [
+      "l2fm",
+      "eltm",
+      "netstack",
+      "res_mgr",
+      "l3vm",
+      "arp",
+      "urib",
+      "ifmgr"
+    ]
+  },
+  {
+    "service_name": "vshd",
+    "conf_file": "vshd.conf",
+    "process_name": "/isan/bin/vshd",
+    "scope": "infra",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": []
+  },
+  {
+    "service_name": "xbar",
+    "conf_file": "xbm.conf",
+    "process_name": "/isan/bin/xbm",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": [
+      "crdcfg_server"
+    ]
+  },
+  {
+    "service_name": "xinetd",
+    "conf_file": "xinetd-sysmgr.conf",
+    "process_name": "/isan/sbin/xinetd",
+    "scope": "boot",
+    "is_eth_infra": "",
+    "run_mode": "asap",
+    "run_condition": "",
+    "service_dependency": []
+  },
+  {
+    "service_name": "xmlma",
+    "conf_file": "xmlma.conf",
+    "process_name": "/isan/bin/xmlma",
+    "scope": "control",
+    "is_eth_infra": "",
+    "run_mode": "conditional",
+    "run_condition": "compulsory",
+    "service_dependency": []
+  }
+]
+
