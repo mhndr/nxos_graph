@@ -8,3 +8,7 @@ or
 
 python ./nxos-graph.py  < nxos-deps.json  | tred | dot -Tps > graph.ps
 
+TODO:
+----
+	given a component generate a dependency graph for it.
+
