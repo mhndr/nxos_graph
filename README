@@ -1,6 +1,6 @@
 Usage:
 ------
-python  ./nxos_graph.py > nxos_graph.dot
+python  ./nxos-graph.py < nxos-deps.json  > nxos_graph.dot
 tred < nxos_graph.dot  > tred.dot
 dot -Tps ./tred.dot  > graph.ps
 
@@ -8,12 +8,3 @@ or
 
 python ./nxos-graph.py  < nxos-deps.json  | tred | dot -Tps > graph.ps
 
-TODO:
------
-include the following attributes and assign colors to nodes. 
-1. scope     = boot, infra, control
-2. run modes = asap, conditional, conditional/on-demand
-3. run condition = optional, compulsory/" "
-4. core plugin or eth_plugin
-5. base VDC  = if yes, it should be part of core or eth_flag = true.
-6. service dependency resolved 
